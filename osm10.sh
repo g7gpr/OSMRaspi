@@ -31,7 +31,9 @@ cp 000-default.conf     /etc/apache2/sites-enabled/000-default.conf
 cp renderd.conf.apache  /etc/apache2/conf-available/renderd.conf
 cp renderd.conf         /etc/renderd.conf
 cp mod_tile.load        /etc/apache2/mods-available
+tar -cf www.tar www/
 cp www.tar              /var/
+rm www.tar
 cd /var
 sudo tar -xf www.tar
 sudo rm www.tar
