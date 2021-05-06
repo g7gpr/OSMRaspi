@@ -1,0 +1,13 @@
+# Contents of /etc/systemd/system/renderd.service
+[Unit]
+Description=renderd
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/local/bin/renderd -f -c /etc/renderd.conf
+User=osm
+
+[Install]
+WantedBy=multi-user.target
