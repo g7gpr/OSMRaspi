@@ -2,7 +2,7 @@
 #Based on 
 #https://www.linuxbabe.com/debian/openstreetmap-osm-tile-server-debian-10-buster
 
-echo $HOSTNAME ": Starting openstreetmap server installation Raspberry pi"
+echo $HOSTNAME ": Starting openstreetmap server installation"
 
 #Step 0  Upgrade and install
 
